@@ -149,6 +149,31 @@ class Program
         }
         if (build  == "4")
         {
+            Console.WriteLine("Название процессора: ");
+            string CPU = Console.ReadLine();
+
+            Console.WriteLine("Название видеокарты:");
+            string GPU = Console.ReadLine();
+
+            Console.WriteLine("Количество ГБ оперативной памяти: ");
+            string RAM = Console.ReadLine();
+
+            Console.WriteLine("Количество ГБ на жестком диске: ");
+            string Storage = Console.ReadLine();
+
+            Console.WriteLine("Название материнской платы: ");
+            string Motherboard = Console.ReadLine();
+
+            Console.WriteLine("Цвет корпуса: ");
+            string Case = Console.ReadLine();
+
+            Console.WriteLine("Количество ватт на блоке питания: ");
+            string PSU = Console.ReadLine();
+
+            Console.WriteLine("Название операционной системы: ");
+            string OS = Console.ReadLine();
+
+
 
         }
 
@@ -164,18 +189,3 @@ class Program
 
 
 
-//Console.WriteLine("Название процессора: ");
-//computer.CPU
-//            Console.WriteLine("Название видеокарты:");
-
-//Console.WriteLine("Количество ГБ оперативной памяти: ");
-
-//Console.WriteLine("Количество ГБ на жестком диске: ");
-
-//Console.WriteLine("Название материнской платы: ");
-
-//Console.WriteLine("Цвет корпуса: ");
-
-//Console.WriteLine("Количество ватт на блоке питания: ");
-
-//Console.WriteLine("Название операционной системы: ");
