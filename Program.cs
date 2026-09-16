@@ -1,4 +1,4 @@
-﻿class Computer
+class Computer
 {
     public string CPU;
     public string GPU;
@@ -80,6 +80,8 @@ class ComputerBuilder
     }
 }
 
+
+
 class Program
 {
     static void Main()
@@ -95,6 +97,85 @@ class Program
             .SetPowerSupply(750)
             .SetOperatingSystem("Windows 11 PRO")
             .Build();
-        computer.ShowInfo();
+
+        Computer gamingcomputer = builder
+            .SetProcessor("AMD Ryzen 7 9800x3d")
+            .SetVideoCard("RTX 4090 TI")
+            .SetRAM(64)
+            .SetStorage(2000)
+            .SetMotherboard("Standart-ATX")
+            .SetCase("RGB")
+            .SetPowerSupply(1250)
+            .SetOperatingSystem("Windows 11 PRO")
+            .Build();
+
+        Computer officecomputer = builder
+            .SetProcessor("Intel Pentium")
+            .SetVideoCard("-")
+            .SetRAM(8)
+            .SetStorage(1000)
+            .SetMotherboard("Standart-ATX")
+            .SetCase("black")
+            .SetPowerSupply(350)
+            .SetOperatingSystem("Windows 10 Office")
+            .Build();
+
+        Computer budgetcomputer = builder
+            .SetProcessor("AMD Ryzen 5 5600x")
+            .SetVideoCard("RTX 4060 ")
+            .SetRAM(32)
+            .SetStorage(1000)
+            .SetMotherboard("Standart-ATX")
+            .SetCase("black")
+            .SetPowerSupply(650)
+            .SetOperatingSystem("Windows 11 HOME")
+            .Build();
+
+
+        Console.WriteLine("=== СБОРКА КОМПЬЮТЕРА === \n 1 — Игровой компьютер \n 2 — Офисный компьютер \n 3 — Бюджетный компьютер \n 4 — Собрать самостоятельно");
+        string build = Console.ReadLine();
+        if (build == "1")
+        {
+            gamingcomputer.ShowInfo();
+        }
+
+        if ( build == "2")
+        {
+            officecomputer.ShowInfo();
+        }
+        if (build == "3")
+        {
+            budgetcomputer.ShowInfo();
+        }
+        if (build  == "4")
+        {
+
+        }
+
+        else
+        {
+            Console.WriteLine();
+        }
+
+
+
     }
 }
+
+
+
+//Console.WriteLine("Название процессора: ");
+//computer.CPU
+//            Console.WriteLine("Название видеокарты:");
+
+//Console.WriteLine("Количество ГБ оперативной памяти: ");
+
+//Console.WriteLine("Количество ГБ на жестком диске: ");
+
+//Console.WriteLine("Название материнской платы: ");
+
+//Console.WriteLine("Цвет корпуса: ");
+
+//Console.WriteLine("Количество ватт на блоке питания: ");
+
+//Console.WriteLine("Название операционной системы: ");
